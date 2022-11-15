@@ -29,7 +29,7 @@
 //===========================================================================
 
 // Uncomment to set a custom printer name.
-//#define PRUSA_AIO_CUSTOM_PRINTER_NAME "AIO Bear"
+#define PRUSA_AIO_CUSTOM_PRINTER_NAME "Josh BlackBear"
 
 //===========================================================================
 //=========================== Printer/Frame Type ============================
@@ -75,9 +75,9 @@
  * Wiring Guide: https://github.com/thisiskeithb/PrusaAIO/wiki/Supported-Motherboards-&-Wiring-Guide
  */
 //#define PRUSA_AIO_MOTHERBOARD_BTT_SKR_V3_0
-#define PRUSA_AIO_MOTHERBOARD_BTT_SKR_V3_0_EZ
+//#define PRUSA_AIO_MOTHERBOARD_BTT_SKR_V3_0_EZ
 //#define PRUSA_AIO_MOTHERBOARD_BTT_SKR_V2_0_REV_B
-//#define PRUSA_AIO_MOTHERBOARD_BTT_SKR_1_4
+#define PRUSA_AIO_MOTHERBOARD_BTT_SKR_1_4
 //#define PRUSA_AIO_MOTHERBOARD_BTT_SKR_1_4_TURBO
 //#define PRUSA_AIO_MOTHERBOARD_BTT_BTT002
 //#define PRUSA_AIO_MOTHERBOARD_BTT_SKR_MINI_E3_V3
@@ -126,8 +126,8 @@
  * Supported Motors: https://github.com/thisiskeithb/PrusaAIO/wiki/Supported-Motors
  * Wiring Guide: https://github.com/thisiskeithb/PrusaAIO/wiki/Supported-Motherboards-&-Wiring-Guide
  */
-#define PRUSA_AIO_E_STEPPER_STOCK
-//#define PRUSA_AIO_E_STEPPER_BONDTECH
+//#define PRUSA_AIO_E_STEPPER_STOCK
+#define PRUSA_AIO_E_STEPPER_BONDTECH
 //#define PRUSA_AIO_E_STEPPER_LDO_0_9
 //#define PRUSA_AIO_E_STEPPER_LDO_PLANETARY
 
@@ -161,11 +161,11 @@
  * If needed, uncomment PRUSA_AIO_*_STALL sensorless (StallGuard) settings below.
  * Settings can also be customized via LCD under Configuration -> Advanced Settings -> TMC Drivers -> Sensorless Homing
  */
-//#define PRUSA_AIO_X_STALL_SENSITIVITY  90
-//#define PRUSA_AIO_Y_STALL_SENSITIVITY  100
+#define PRUSA_AIO_X_STALL_SENSITIVITY  30
+#define PRUSA_AIO_Y_STALL_SENSITIVITY  50
 
 // If needed, uncomment PRUSA_AIO_HOMING_FEEDRATE_MM_M to customize Homing speeds (mm/min)
-//#define PRUSA_AIO_HOMING_FEEDRATE_MM_M { (50*60), (50*60), (4*60) }
+#define PRUSA_AIO_HOMING_FEEDRATE_MM_M { (50*60), (50*60), (4*60) }
 
 //===========================================================================
 //================================ Extruder =================================
@@ -182,9 +182,9 @@
  * Supported Extruders: https://github.com/thisiskeithb/PrusaAIO/wiki/Supported-Extruders
  * Wiring Guide: https://github.com/thisiskeithb/PrusaAIO/wiki/Supported-Motherboards-&-Wiring-Guide
  */
-#define PRUSA_AIO_EXTRUDER_BEAR_PINDA
+//#define PRUSA_AIO_EXTRUDER_BEAR_PINDA
 //#define PRUSA_AIO_EXTRUDER_BEAR_BLTOUCH
-//#define PRUSA_AIO_EXTRUDER_BMG_PINDA
+#define PRUSA_AIO_EXTRUDER_BMG_PINDA
 //#define PRUSA_AIO_EXTRUDER_BMG_BLTOUCH
 
 //===========================================================================
@@ -205,7 +205,7 @@
  *  X<1>         Set the given parameters only for the X axis.
  *  Y<1>         Set the given parameters only for the Y axis.
  */
-//#define PRUSA_AIO_INPUT_SHAPING
+#define PRUSA_AIO_INPUT_SHAPING
 #if ENABLED(PRUSA_AIO_INPUT_SHAPING)
   #define PRUSA_AIO_SHAPING_FREQ_X    40  // (Hz) The dominant resonant frequency of the X axis.
   #define PRUSA_AIO_SHAPING_FREQ_Y    40  // (Hz) The dominant resonant frequency of the Y axis.
@@ -304,8 +304,8 @@
  * Supported Thermistors: https://github.com/thisiskeithb/PrusaAIO/wiki/Supported-Thermistors
  * Wiring Guide: https://github.com/thisiskeithb/PrusaAIO/wiki/Supported-Motherboards-&-Wiring-Guide
  */
-#define PRUSA_AIO_THERMISTOR_STOCK_SEMITEC_104NT
-//#define PRUSA_AIO_THERMISTOR_GENERIC_100K
+//#define PRUSA_AIO_THERMISTOR_STOCK_SEMITEC_104NT
+#define PRUSA_AIO_THERMISTOR_GENERIC_100K
 //#define PRUSA_AIO_THERMISTOR_SLICE_450C
 //#define PRUSA_AIO_THERMISTOR_TL_T_D500
 
@@ -342,7 +342,7 @@
 //#define PRUSA_AIO_HOTEND_MPCTEMP
 
 // If needed, uncomment PRUSA_AIO_CUSTOM_HOTEND_MPCTEMP to customize MPCTEMP settings. Use M306 T to autotune the model.
-//#define PRUSA_AIO_CUSTOM_HOTEND_MPCTEMP
+#define PRUSA_AIO_CUSTOM_HOTEND_MPCTEMP
 #if BOTH(PRUSA_AIO_HOTEND_MPCTEMP, PRUSA_AIO_CUSTOM_HOTEND_MPCTEMP)
   #define PRUSA_AIO_CUSTOM_MPC_HEATER_POWER { 40.0f }                // (W) Heat cartridge power.
   #define PRUSA_AIO_CUSTOM_MPC_BLOCK_HEAT_CAPACITY { 16.7f }         // (J/K) Heat block heat capacity. Use M306 T to autotune the model.
@@ -368,10 +368,10 @@
  *
  * LCD Covers: https://github.com/thisiskeithb/PrusaAIO/wiki/Recommended-LCD-Covers
  */
-#define PRUSA_AIO_DISPLAY_STOCK_REPRAP_DISCOUNT_SMART_CONTROLLER
+//#define PRUSA_AIO_DISPLAY_STOCK_REPRAP_DISCOUNT_SMART_CONTROLLER
 //#define PRUSA_AIO_DISPLAY_OLED_REPRAP_DISCOUNT_SMART_CONTROLLER
 //#define PRUSA_AIO_DISPLAY_BTT_DUAL_MODE_TFT
-//#define PRUSA_AIO_DISPLAY_MINI_12864_NEOPIXEL
+#define PRUSA_AIO_DISPLAY_MINI_12864_NEOPIXEL
 
 //
 // Reverse the encoder direction everywhere.
@@ -388,7 +388,7 @@
  *
  * :{ 'en':'English', 'an':'Aragonese', 'bg':'Bulgarian', 'ca':'Catalan', 'cz':'Czech', 'da':'Danish', 'de':'German', 'el':'Greek (Greece)', 'el_CY':'Greek (Cyprus)', 'es':'Spanish', 'eu':'Basque-Euskera', 'fi':'Finnish', 'fr':'French', 'gl':'Galician', 'hr':'Croatian', 'hu':'Hungarian', 'it':'Italian', 'jp_kana':'Japanese', 'ko_KR':'Korean (South Korea)', 'nl':'Dutch', 'pl':'Polish', 'pt':'Portuguese', 'pt_br':'Portuguese (Brazilian)', 'ro':'Romanian', 'ru':'Russian', 'sk':'Slovak', 'sv':'Swedish', 'tr':'Turkish', 'uk':'Ukrainian', 'vi':'Vietnamese', 'zh_CN':'Chinese (Simplified)', 'zh_TW':'Chinese (Traditional)' }
  */
-#define PRUSA_AIO_LCD_LANGUAGE en
+#define PRUSA_AIO_LCD_LANGUAGE zh_CN
 
 //===========================================================================
 //============================== Custom Menus ===============================
@@ -403,13 +403,13 @@
 //#define PRUSA_AIO_SHEET_PROFILES_MENU
 #if ENABLED(PRUSA_AIO_SHEET_PROFILES_MENU)
   #define PRUSA_AIO_SHEET_1_DESC     "Smooth"    // Short description of Sheet
-  #define PRUSA_AIO_SHEET_1_OFFSET     -0.000    // Sheet offset. This should be a negative value.
+  #define PRUSA_AIO_SHEET_1_OFFSET     -0.688    // Sheet offset. This should be a negative value.
 
   #define PRUSA_AIO_SHEET_2_DESC    "Textured"
-  #define PRUSA_AIO_SHEET_2_OFFSET     -0.000
+  #define PRUSA_AIO_SHEET_2_OFFSET     -1.390
 
-  //#define PRUSA_AIO_SHEET_3_DESC    "Satin"
-  //#define PRUSA_AIO_SHEET_3_OFFSET   -0.000
+  #define PRUSA_AIO_SHEET_3_DESC    "Satin"
+  #define PRUSA_AIO_SHEET_3_OFFSET   -1.024
 #endif
 
 /**
@@ -417,7 +417,7 @@
  *
  * Calibrate first layer, change nozzle, do a cold pull, etc.
  */
-//#define PRUSA_AIO_CALIBRATION_MENU
+#define PRUSA_AIO_CALIBRATION_MENU
 
 //===========================================================================
 //================================ NeoPixels ================================
@@ -440,7 +440,7 @@
 #endif
 
 // NeoPixel strip is disabled by default. Uncomment to enable.
-//#define PRUSA_AIO_NEOPIXEL_STRIP
+#define PRUSA_AIO_NEOPIXEL_STRIP
 #if ENABLED(PRUSA_AIO_NEOPIXEL_STRIP)
   /**
    * NeoPixel Strip Type
@@ -452,18 +452,18 @@
    */
   #define PRUSA_AIO_NEOPIXEL_STRIP_TYPE NEO_GRB
   #define PRUSA_AIO_NEOPIXEL_STRIP_LED_COUNT    17    // 17 NeoPixels fit in the top 2040 extrusion (60 LEDs/meter)
-  #define PRUSA_AIO_NEOPIXEL_STRIP_BRIGHTNESS  255    // 255 is max brightness
+  #define PRUSA_AIO_NEOPIXEL_STRIP_BRIGHTNESS  150    // 255 is max brightness
 
   /**
    * Default NeoPixel Strip Color
    *
    *   - WHITE, RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET
    */
-  #define PRUSA_AIO_NEOPIXEL_STRIP_COLOR_WHITE
+  //#define PRUSA_AIO_NEOPIXEL_STRIP_COLOR_WHITE
   //#define PRUSA_AIO_NEOPIXEL_STRIP_COLOR_RED
   //#define PRUSA_AIO_NEOPIXEL_STRIP_COLOR_ORANGE
   //#define PRUSA_AIO_NEOPIXEL_STRIP_COLOR_YELLOW
-  //#define PRUSA_AIO_NEOPIXEL_STRIP_COLOR_GREEN
+  #define PRUSA_AIO_NEOPIXEL_STRIP_COLOR_GREEN
   //#define PRUSA_AIO_NEOPIXEL_STRIP_COLOR_BLUE
   //#define PRUSA_AIO_NEOPIXEL_STRIP_COLOR_INDIGO
   //#define PRUSA_AIO_NEOPIXEL_STRIP_COLOR_VIOLET
