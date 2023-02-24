@@ -64,7 +64,7 @@
 #define DISABLE_DEBUG
 
 #ifndef NEOPIXEL_PIN
-  #define NEOPIXEL_PIN                      PA8   // LED driving pin
+  //#define NEOPIXEL_PIN                    PA8   // LED driving pin
 #endif
 
 #ifndef PS_ON_PIN

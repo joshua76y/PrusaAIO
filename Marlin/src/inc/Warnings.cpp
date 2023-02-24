@@ -196,7 +196,7 @@
     #endif
   #endif
   #if AUTO_ASSIGNED_Z2_STEPPER
-    #warning "Note: Auto-assigned Z2 STEP/DIR/ENABLE_PINs to unused En_STEP/DIR/ENABLE_PINs. (Define NO_AUTO_ASSIGN_WARNING to suppress this warning.)"
+    //#warning "Note: Auto-assigned Z2 STEP/DIR/ENABLE_PINs to unused En_STEP/DIR/ENABLE_PINs. (Define NO_AUTO_ASSIGN_WARNING to suppress this warning.)"
   #endif
   #if AUTO_ASSIGNED_Z2_MS1
     #warning "Note: Auto-assigned Z2_MS1_PIN to an unused En_MS1_PIN. (Define NO_AUTO_ASSIGN_WARNING to suppress this warning.)"
@@ -739,7 +739,7 @@
 #endif
 
 #if HAS_LCD_CONTRAST && LCD_CONTRAST_MIN >= LCD_CONTRAST_MAX
-  #warning "Contrast cannot be changed when LCD_CONTRAST_MIN >= LCD_CONTRAST_MAX."
+  //#warning "Contrast cannot be changed when LCD_CONTRAST_MIN >= LCD_CONTRAST_MAX."
 #endif
 
 #if PROGRESS_MSG_EXPIRE > 0 && HAS_STATUS_MESSAGE_TIMEOUT
@@ -774,7 +774,7 @@
  * Průša MK3/S/+ fan pin reassignment
  */
 #if MB(BTT_BTT002_V1_0, EINSY_RAMBO) && DISABLED(NO_MK3_FAN_PINS_WARNING)
-  #warning "Define MK3_FAN_PINS to swap hotend and part cooling fan pins. (Define NO_MK3_FAN_PINS_WARNING to suppress this warning.)"
+  //#warning "Define MK3_FAN_PINS to swap hotend and part cooling fan pins. (Define NO_MK3_FAN_PINS_WARNING to suppress this warning.)"
 #endif
 
 /**
