@@ -10,7 +10,12 @@
     <a href="https://github.com/thisiskeithb/PrusaAIO/actions"><img alt="Prusa AIO CI Status" src="https://github.com/thisiskeithb/PrusaAIO/actions/workflows/test-prusa-aio-build.yml/badge.svg"></a>
     <a href="https://github.com/sponsors/thisiskeithb"><img alt="GitHub Sponsors" src="https://img.shields.io/github/sponsors/thisiskeithb?color=db61a2"></a>
     <br />
+<<<<<<< HEAD
     <a href="https://twitter.com/thisiskeithb"><img alt="Follow thisiskeithb on Twitter" src="https://img.shields.io/twitter/follow/thisiskeithb?style=social&logo=twitter"></a>
+=======
+    <a href="https://twitter.com/thisiskeithb"><img alt="Follow thisiskeithb on Twitter" src="https://img.shields.io/twitter/url/https/twitter.com/thisiskeithb.svg?style=social&label=Follow%20%40thisiskeithb"></a>
+    <a href="https://fosstodon.org/@thisiskeithb"><img alt="Follow thisiskeithb on Mastodon" src="https://img.shields.io/mastodon/follow/109537431986133967?domain=https%3A%2F%2Ffosstodon.org&logoColor=%2300B&style=social"></a>
+>>>>>>> 95811b8c4da547f4ba8f855ac8b2044dee5682a9
 </p>
 
 ## Table of Contents
@@ -31,7 +36,11 @@
  - [Prusa Bear Upgrade Facebook group](https://facebook.com/groups/prusabearupgrade/)
  - [Prusa Community Facebook group](https://facebook.com/groups/675831176090951/)
 
+<<<<<<< HEAD
  You can also find me on the [MarlinFimware Discord](https://discord.gg/n5NJ59y): [💬 thisiskeithb#4707](https://discordapp.com/users/602976310805135370).
+=======
+ You can also find me on the [MarlinFirmware Discord](https://discord.gg/n5NJ59y): [💬 thisiskeithb#4707](https://discordapp.com/users/602976310805135370).
+>>>>>>> 95811b8c4da547f4ba8f855ac8b2044dee5682a9
 
 ## Configuring Prusa All-in-One Firmware
 
@@ -45,7 +54,11 @@ To build this firmware, you'll need [Visual Studio Code](https://code.visualstud
 
 In addition to the stock hardware (except the Einsy motherboard & Power Panic), the following upgrades are supported:
 
+<<<<<<< HEAD
 - **Motherboards**: BigTreeTech SKR 3.0 & 3.0 EZ, 2.0 with optional flash drive support, 1.4 & 1.4 Turbo, BTT002 1.0, SKR Mini E3 V3 & 3.0.1, MKS/Makerbase Robin Nano V3 with optional flash drive support, SGEN_L V2, and Robin E3 & E3D V1.x
+=======
+- **Motherboards**: BigTreeTech SKR 3.0 & 3.0 EZ, 2.0 with optional flash drive support, 1.4 & 1.4 Turbo, BTT002 1.0, SKR Mini E3 V3.x & V2, MKS/Makerbase Robin Nano V3 & 3.1 with optional flash drive support, SGEN_L V2, and Robin E3 & E3D V1.x
+>>>>>>> 95811b8c4da547f4ba8f855ac8b2044dee5682a9
 - **Drivers**: TMC2209s, TMC5160s, and TMC2130s
 - **Displays**: BigTreeTech dual mode TFT (TFT35, TFT50, TFT70, etc.), WINSTAR OLED-based RepRapDiscount smart controller, and Mini 12864 with NeoPixel RGB backlight (BigTreeTech Mini 12864 V1 and MKS Mini 12864 V3)
 - **LDO/Moons Stepper Motors**: Planetary extruder and 0.9° X/Y/E

@@ -19,7 +19,6 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  *
  */
-
 #pragma once
 
 //
@@ -351,7 +350,11 @@
     #define DOGLCD_A0                LCD_PINS_DC
     #define LCD_BACKLIGHT_PIN               -1
     #define LCD_RESET_PIN            EXP1_05_PIN
+<<<<<<< HEAD
     //#define NEOPIXEL_PIN             EXP1_06_PIN
+=======
+    //#define NEOPIXEL_PIN           EXP1_06_PIN
+>>>>>>> 95811b8c4da547f4ba8f855ac8b2044dee5682a9
     #define DOGLCD_MOSI              EXP2_06_PIN
     #define DOGLCD_SCK               EXP2_02_PIN
     #if SD_CONNECTION_IS(ONBOARD)
@@ -362,7 +365,7 @@
   #else                                           // !MKS_MINI_12864
 
     #define LCD_PINS_D4              EXP1_05_PIN
-    #if ENABLED(ULTIPANEL)
+    #if IS_ULTIPANEL
       #define LCD_PINS_D5            EXP1_06_PIN
       #define LCD_PINS_D6            EXP1_07_PIN
       #define LCD_PINS_D7            EXP1_08_PIN

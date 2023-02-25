@@ -203,7 +203,11 @@
     #define DOGLCD_A0                LCD_PINS_DC
     #define LCD_BACKLIGHT_PIN               -1
     #define LCD_RESET_PIN            EXP1_05_PIN
+<<<<<<< HEAD
     //#define NEOPIXEL_PIN             EXP1_06_PIN
+=======
+    //#define NEOPIXEL_PIN           EXP1_06_PIN
+>>>>>>> 95811b8c4da547f4ba8f855ac8b2044dee5682a9
     #define DOGLCD_MOSI              EXP2_06_PIN
     #define DOGLCD_SCK               EXP2_02_PIN
     #define FORCE_SOFT_SPI
@@ -243,13 +247,17 @@
 
 // LED driving pin
 #ifndef NEOPIXEL_PIN
+<<<<<<< HEAD
   //#define NEOPIXEL_PIN                      PA2
+=======
+  //#define NEOPIXEL_PIN                    PA2
+>>>>>>> 95811b8c4da547f4ba8f855ac8b2044dee5682a9
 #endif
 
 //
 // SD Card
 //
-#define SDCARD_CONNECTION                ONBOARD
+//#define SDCARD_CONNECTION              ONBOARD
 #define SPI_DEVICE                             2
 #define ONBOARD_SPI_DEVICE                     2
 #define SDSS                           SD_SS_PIN

@@ -485,7 +485,11 @@
           #define RGB_LED_B_PIN      EXP1_08_PIN
         #endif
       #elif ENABLED(FYSETC_MINI_12864_2_1)
+<<<<<<< HEAD
         //#define NEOPIXEL_PIN         EXP1_06_PIN
+=======
+        //#define NEOPIXEL_PIN       EXP1_06_PIN
+>>>>>>> 95811b8c4da547f4ba8f855ac8b2044dee5682a9
       #endif
     #endif // !FYSETC_MINI_12864
 
@@ -542,7 +546,11 @@
 // NeoPixel LED
 //
 #ifndef NEOPIXEL_PIN
+<<<<<<< HEAD
   //#define NEOPIXEL_PIN                      PE6
+=======
+  //#define NEOPIXEL_PIN                    PE6
+>>>>>>> 95811b8c4da547f4ba8f855ac8b2044dee5682a9
 #endif
 
 //
